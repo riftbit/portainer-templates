@@ -76,6 +76,24 @@
   },
   {
     "type": "container",
+    "title": "JB License server",
+    "description": "",
+    "categories": ["Riftbit"],
+    "platform": "linux",
+    "logo": "https://pbs.twimg.com/profile_images/675258499220168704/Roo50acJ_400x400.png",
+    "image": "riftbit/intellij-license-server:latest",
+    "env": [
+      {
+        "name": "LUSER",
+        "label": "Registred User name"
+      }
+    ],
+    "ports": [
+      "1017/tcp"
+    ]
+  },
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],

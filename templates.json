@@ -10,6 +10,7 @@
     "ports": [
       "7443/tcp", "8080/tcp", "8081/tcp", "8082/tcp", "8440/tcp", "8441/tcp", "8442/tcp", "8443/tcp", "9443/tcp"
     ],
+    "note": "You can use this field to specify extra information. <br/> It supports <b>HTML</b>.",
     "volumes": ["/blynk/config", "/blynk/data"]
   },
   {
@@ -20,6 +21,7 @@
     "platform": "linux",
     "logo": "https://habrastorage.org/webt/6w/un/-4/6wun-4_2ftqkkuyw2o1rolr9gx8.png",
     "image": "riftbit/serviio:latest",
+    "network": "host",
     "ports": [
       "1900/udp", "8895/tcp", "23423/tcp", "23523/tcp", "23424/tcp", "23524/tcp"
     ],
@@ -434,6 +436,34 @@
       "url": "https://github.com/openfaas/faas",
       "stackfile": "docker-compose.yml"
     }
+  },
+    {
+    "title": "Sematext Docker Agent",
+    "type": "stack",
+    "categories": ["Log Management", "Monitoring"],
+    "description": "Collect logs, metrics and docker events",
+    "logo": "https://cloudinovasi.id/assets/img/logos/sematext.png",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/portainer/templates",
+      "stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
+    },
+    "env": [
+      {
+        "name": "LOGSENE_TOKEN",
+        "label": "Logs token"
+      },
+      {
+        "name": "SPM_TOKEN",
+        "label": "SPM monitoring token"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ]
   },
   {
     "type": "stack",

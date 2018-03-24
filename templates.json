@@ -204,6 +204,25 @@
   },
   {
     "type": "container",
+    "title": "Counter-Strike 1.6",
+    "description": "classic valve 3d shooter",
+    "categories": [
+      "valve","game"
+    ],
+    "platform": "linux",
+    "logo": "https://habrastorage.org/webt/xl/py/hr/xlpyhrdkqkudwglfaprwmtx0mf8.png",
+    "image": "hlds/server:alpha",
+    "ports": [
+      "27015/udp", "27015/tcp", "27020/udp", "26900/udp",
+    ],
+    "volumes": [
+      "/opt/hlds/cstrike/maps/",
+      "/opt/hlds/cstrike/addons/",
+      "/opt/hlds/cstrike/server.cfg"
+    ]
+  },
+  {
+    "type": "container",
     "title": "Registry",
     "description": "Docker image registry",
     "categories": [

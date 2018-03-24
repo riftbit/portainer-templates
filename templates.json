@@ -213,12 +213,37 @@
     "logo": "https://habrastorage.org/webt/xl/py/hr/xlpyhrdkqkudwglfaprwmtx0mf8.png",
     "image": "hlds/server:alpha",
     "ports": [
-      "27015/udp", "27015/tcp", "27020/udp", "26900/udp",
+      "27015/udp", "27015/tcp", "27020/udp", "26900/udp"
+    ],
+    "env": [
+      {
+        "name": "START_MAP",
+        "label": "START_MAP"
+      },
+      {
+        "name": "ADMIN_STEAM",
+        "label": "ADMIN_STEAM"
+      },
+      {
+        "name": "SERVER_NAME",
+        "label": "SERVER_NAME"
+      },
+      {
+        "name": "MAXPLAYERS",
+        "label": "MAXPLAYERS"
+      },
+      {
+        "name": "RESTART_ON_FAIL",
+        "label": "RESTART_ON_FAIL (empty=false other=true)"
+      }
+      
+      
     ],
     "volumes": [
       "/opt/hlds/cstrike/maps/",
       "/opt/hlds/cstrike/addons/",
-      "/opt/hlds/cstrike/server.cfg"
+      "/opt/hlds/cstrike/server.cfg",
+      "/opt/hlds/startup.cfg"
     ]
   },
   {

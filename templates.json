@@ -18,7 +18,7 @@
     "description": "Docker image for Serviio DLNA Media Server",
     "categories": ["Riftbit"],
     "platform": "linux",
-    "logo": "http://serviio.org/images/serviio.png",
+    "logo": "https://habrastorage.org/webt/6w/un/-4/6wun-4_2ftqkkuyw2o1rolr9gx8.png",
     "image": "riftbit/serviio:latest",
     "ports": [
       "1900/udp", "8895/tcp", "23423/tcp", "23523/tcp", "23424/tcp", "23524/tcp"

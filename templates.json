@@ -189,7 +189,7 @@
     ],
     "platform": "linux",
     "logo": "https://pp.userapi.com/c307608/v307608495/5490/1_TyrAxQChQ.jpg",
-    "image": "registry:latest",
+    "image": "bettervoice/freeswitch-container:1.6.16",
     "privileged": true,
     "ports": [
       "5060/tcp", "5060/udp", "5080/tcp", "5080/udp",

@@ -94,6 +94,56 @@
   },
   {
     "type": "container",
+    "title": "Icecast",
+    "description": "Docker image for Icecast Streaming Server",
+    "categories": ["media"],
+    "platform": "linux",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Icecast_logo_large_2004.svg/1200px-Icecast_logo_large_2004.svg.png",
+    "image": "infiniteproject/icecast:latest",
+    "env": [
+      {
+        "name": "ICECAST_SOURCE_PASSWORD",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_ADMIN_PASSWORD",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_RELAY_PASSWORD",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_ADMIN_USERNAME",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_ADMIN_EMAIL",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_LOCATION",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_HOSTNAME",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_MAX_CLIENTS",
+        "label": ""
+      },
+      {
+        "name": "ICECAST_MAX_SOURCES",
+        "label": ""
+      }
+    ],
+    "ports": [
+      "8000/tcp"
+    ]
+  },
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],

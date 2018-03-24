@@ -27,6 +27,29 @@
   },
   {
     "type": "container",
+    "title": "3proxy",
+    "description": "Docker image for 3proxy server",
+    "categories": ["Riftbit"],
+    "platform": "linux",
+    "logo": "https://habrastorage.org/webt/6w/un/-4/6wun-4_2ftqkkuyw2o1rolr9gx8.png",
+    "image": "riftbit/3proxy:latest",
+    "env": [
+      {
+        "name": "PROXY_LOGIN",
+        "label": "Login for proxy user"
+      },
+      {
+        "name": "PROXY_PASSWORD",
+        "label": "Password for proxy user"
+      }
+    ],
+    "ports": [
+      "3128/tcp"
+    ],
+    "volumes": ["/etc/3proxy/log"]
+  },
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],

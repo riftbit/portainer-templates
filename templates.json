@@ -103,39 +103,39 @@
     "env": [
       {
         "name": "ICECAST_SOURCE_PASSWORD",
-        "label": ""
+        "label": "ICECAST_SOURCE_PASSWORD"
       },
       {
         "name": "ICECAST_ADMIN_PASSWORD",
-        "label": ""
+        "label": "ICECAST_ADMIN_PASSWORD"
       },
       {
         "name": "ICECAST_RELAY_PASSWORD",
-        "label": ""
+        "label": "ICECAST_RELAY_PASSWORD"
       },
       {
         "name": "ICECAST_ADMIN_USERNAME",
-        "label": ""
+        "label": "ICECAST_ADMIN_USERNAME"
       },
       {
         "name": "ICECAST_ADMIN_EMAIL",
-        "label": ""
+        "label": "ICECAST_ADMIN_EMAIL"
       },
       {
         "name": "ICECAST_LOCATION",
-        "label": ""
+        "label": "ICECAST_LOCATION"
       },
       {
         "name": "ICECAST_HOSTNAME",
-        "label": ""
+        "label": "ICECAST_HOSTNAME"
       },
       {
         "name": "ICECAST_MAX_CLIENTS",
-        "label": ""
+        "label": "ICECAST_MAX_CLIENTS"
       },
       {
         "name": "ICECAST_MAX_SOURCES",
-        "label": ""
+        "label": "ICECAST_MAX_SOURCES"
       }
     ],
     "ports": [

@@ -14,6 +14,19 @@
   },
   {
     "type": "container",
+    "title": "Serviio DLNA",
+    "description": "Docker image for Serviio DLNA Media Server",
+    "categories": ["Riftbit"],
+    "platform": "linux",
+    "logo": "http://serviio.org/images/serviio.png",
+    "image": "riftbit/serviio:latest",
+    "ports": [
+      "1900/udp", "8895/tcp", "23423/tcp", "23523/tcp", "23424/tcp", "23524/tcp"
+    ],
+    "volumes": ["/opt/serviio/config", "/opt/serviio/library",  "/opt/serviio/log", "/opt/serviio/plugins", "/media/serviio"]
+  },
+  {
+    "type": "container",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],

@@ -31,7 +31,7 @@
     "description": "Docker image for 3proxy server",
     "categories": ["Riftbit"],
     "platform": "linux",
-    "logo": "https://habrastorage.org/webt/6w/un/-4/6wun-4_2ftqkkuyw2o1rolr9gx8.png",
+    "logo": "https://avatars3.githubusercontent.com/u/9392733?s=88&v=4",
     "image": "riftbit/3proxy:latest",
     "env": [
       {
@@ -47,6 +47,32 @@
       "3128/tcp"
     ],
     "volumes": ["/etc/3proxy/log"]
+  },
+  {
+    "type": "container",
+    "title": "CollectD To Clickhouse Gateway",
+    "description": "Docker image CLD2CH - a native protocols gateway from CollectD to Yandex Clickhouse to store system metrics in database.",
+    "categories": ["Riftbit"],
+    "platform": "linux",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Clickhouse.png/220px-Clickhouse.png",
+    "image": "riftbit/collectd2chlickhouse:latest",
+    "env": [
+      {
+        "name": "CLD2CH_THREADS",
+        "label": "How many golang threads will be used (default: 250)"
+      },
+      {
+        "name": "CLD2CH_CH_CONNECTION_STRING",
+        "label": "Connection string to Clickhouse (example and default: tcp://127.0.0.1:9000?read_timeout=10&write_timeout=20)"
+      },
+      {
+        "name": "CLD2CH_CH_DB_NAME",
+        "label": "Clickhouse database name to store CollectD Data (default: CollectD)"
+      }
+    ],
+    "ports": [
+      "25826/udp"
+    ]
   },
   {
     "type": "container",

@@ -211,7 +211,7 @@
     ],
     "platform": "linux",
     "logo": "https://habrastorage.org/webt/xl/py/hr/xlpyhrdkqkudwglfaprwmtx0mf8.png",
-    "image": "hlds/server:alpha",
+    "image": "hlds/server:master",
     "ports": [
       "27015/udp", "27015/tcp", "27020/udp", "26900/udp"
     ],

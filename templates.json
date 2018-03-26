@@ -130,6 +130,24 @@
   },
   {
     "type": "container",
+    "title": "SHOUTcast",
+    "description": "Docker image for SHOUTcast Streaming Server",
+    "categories": [
+      "media"
+    ],
+    "platform": "linux",
+    "logo": "https://habrastorage.org/webt/xq/sf/rb/xqsfrb4_vqvguar-cnyhtmi3puy.jpeg",
+    "image": "riftbit/shoutcast:latest",
+    "ports": [
+      "8000/tcp",
+      "8001/tcp"
+    ],    
+    "volumes": [
+      "/opt/shoutcast/logs",
+      "/opt/shoutcast/sc_serv.conf"
+    ]
+  },  {
+    "type": "container",
     "title": "Icecast",
     "description": "Docker image for Icecast Streaming Server",
     "categories": [

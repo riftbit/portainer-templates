@@ -144,7 +144,8 @@
     ],    
     "volumes": [
       "/opt/shoutcast/logs",
-      "/opt/shoutcast/sc_serv.conf"
+      "/opt/shoutcast/control,
+      "/opt/shoutcast/configs"
     ]
   },  {
     "type": "container",

@@ -53,6 +53,38 @@
       "/media/serviio"
     ]
   },
+    {
+    "type": "container",
+    "title": "MTProto Proxy",
+    "description": "Docker image with official Telegram MTProto Proxy",
+    "categories": [
+      "Riftbit"
+    ],
+    "platform": "linux",
+    "logo": "https://avatars3.githubusercontent.com/u/22377696?s=200&v=4",
+    "image": "telegrammessenger/proxy:latest",
+    "env": [
+      {
+        "name": "SECRET",
+        "label": "Comma separated Secrets list"
+      },
+      {
+        "name": "TAG",
+        "label": "Custom advertisement tag"
+      },
+      {
+        "name": "WORKERS",
+        "label": "Workers count"
+      }
+    ],
+    "ports": [
+      "2398/tcp",
+      "443/tcp"
+    ],
+    "volumes": [
+      "/data"
+    ]
+  },
   {
     "type": "container",
     "title": "3proxy",
@@ -74,10 +106,10 @@
       }
     ],
     "ports": [
-      "3128/tcp"
+      "3128/tcp",
+      "1080/tcp"
     ],
     "volumes": [
-      "/etc/3proxy/log"
     ]
   },
   {

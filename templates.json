@@ -152,12 +152,20 @@
     "image": "riftbit/intellij-license-server:latest",
     "env": [
       {
-        "name": "LUSER",
+        "name": "JLS_HOST",
+        "label": "Listen host"
+      },
+      {
+        "name": "JLS_PORT",
+        "label": "Listen port"
+      },
+      {
+        "name": "JLS_USER",
         "label": "Registred User name"
       }
     ],
     "ports": [
-      "1017/tcp"
+      "1027/tcp"
     ]
   },
   {

@@ -4,6 +4,7 @@
     "title": "IOT Blink",
     "description": "Docker image for blink",
     "name": "iot_blink",
+    "note": "You can use this field to specify extra information. <br/> It supports <b>HTML</b>."
     "categories": [
       "Riftbit"
     ],

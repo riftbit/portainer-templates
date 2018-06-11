@@ -3,6 +3,7 @@
     "type": "container",
     "title": "IOT Blink",
     "description": "Docker image for blink",
+    "name": "iot_blink",
     "categories": [
       "Riftbit"
     ],
@@ -30,6 +31,7 @@
     "type": "container",
     "title": "Serviio DLNA",
     "description": "Docker image for Serviio DLNA Media Server",
+    "name": "serviio",
     "categories": [
       "Riftbit"
     ],
@@ -57,6 +59,7 @@
     "type": "container",
     "title": "MTProto Proxy",
     "description": "Docker image with official Telegram MTProto Proxy",
+    "name": "mtproto_proxy",
     "categories": [
       "Riftbit"
     ],
@@ -74,7 +77,8 @@
       },
       {
         "name": "WORKERS",
-        "label": "Workers count"
+        "label": "Workers count",
+        "set": "1"
       }
     ],
     "ports": [
@@ -89,6 +93,7 @@
     "type": "container",
     "title": "3proxy",
     "description": "Docker image for 3proxy server",
+    "name": "3proxy",
     "categories": [
       "Riftbit"
     ],
@@ -116,6 +121,7 @@
     "type": "container",
     "title": "CollectD To Clickhouse Gateway",
     "description": "Docker image CLD2CH - a native protocols gateway from CollectD to Yandex Clickhouse to store system metrics in database.",
+    "name": "cld2ch",
     "categories": [
       "Riftbit"
     ],
@@ -125,15 +131,18 @@
     "env": [
       {
         "name": "CLD2CH_THREADS",
-        "label": "How many golang threads will be used (default: 250)"
+        "label": "How many golang threads will be used",
+        "set": "250"
       },
       {
         "name": "CLD2CH_CH_CONNECTION_STRING",
-        "label": "Connection string to Clickhouse (example and default: tcp://127.0.0.1:9000?read_timeout=10&write_timeout=20)"
+        "label": "Connection string to Clickhouse",
+        "set": "tcp://127.0.0.1:9000?read_timeout=10&write_timeout=20"
       },
       {
         "name": "CLD2CH_CH_DB_NAME",
-        "label": "Clickhouse database name to store CollectD Data (default: CollectD)"
+        "label": "Clickhouse database name to store CollectD Data",
+        "set": "CollectD"
       }
     ],
     "ports": [
@@ -144,6 +153,7 @@
     "type": "container",
     "title": "JB License server",
     "description": "",
+    "name": "intellij-license-server",
     "categories": [
       "Riftbit"
     ],
@@ -153,15 +163,18 @@
     "env": [
       {
         "name": "JLS_HOST",
-        "label": "Listen host"
+        "label": "Listen host",
+        "set": "0.0.0.0"
       },
       {
         "name": "JLS_PORT",
-        "label": "Listen port"
+        "label": "Listen port",
+        "set": "1027"
       },
       {
         "name": "JLS_USER",
-        "label": "Registred User name"
+        "label": "Registred User name",
+        "set":"htpps://riftbit.com"
       }
     ],
     "ports": [
@@ -172,6 +185,7 @@
     "type": "container",
     "title": "SHOUTcast",
     "description": "Docker image for SHOUTcast Streaming Server",
+    "name": "shoutcast",
     "categories": [
       "media"
     ],
@@ -191,6 +205,7 @@
     "type": "container",
     "title": "Icecast",
     "description": "Docker image for Icecast Streaming Server",
+    "name": "icecast",
     "categories": [
       "media"
     ],
